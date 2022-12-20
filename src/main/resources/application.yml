@@ -1,0 +1,30 @@
+server:
+  servlet:
+    context-path: /training
+  port: 8888
+spring:
+  application:
+    name: noncom-info1-service
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+  datasource:
+    url: jdbc:oracle:thin:@203.150.199.131:1521:XE
+    username: JOBREPORT
+    password: JOBREPORT
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+  servlet:
+    multipart:
+      max-request-size: 250MB
+      max-file-size: 2GB
+logging:
+  level:
+      com.ss.training: info
