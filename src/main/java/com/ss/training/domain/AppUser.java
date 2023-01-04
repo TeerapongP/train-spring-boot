@@ -22,7 +22,6 @@ public class AppUser extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.TABLE)
     @Column(name = "id")
     private Long id;
-
     private String empCode;
 
     private String firstName;

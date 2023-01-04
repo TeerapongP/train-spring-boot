@@ -1,6 +1,9 @@
 server:
   servlet:
     context-path: /training
+    encoding:
+      charset: UTF-8
+      enabled: true
   port: 8888
 spring:
   application:
@@ -17,14 +20,10 @@ spring:
     open-in-view: false
     hibernate:
       ddl-auto: update
-  http:
-    encoding:
-      charset: UTF-8
-      enabled: true
   servlet:
     multipart:
       max-request-size: 250MB
       max-file-size: 2GB
 logging:
   level:
-      com.ss.training: info
+      com.ss.training: debug
